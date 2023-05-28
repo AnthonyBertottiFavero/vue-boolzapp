@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        #009788 20%,
+        #D6DBD7 20%
+    );
+}
+
+.window{
+    max-width: 1000px;
+    margin-inline: auto;
+    height: 90vh;
+}
+
+.contacts{
+    width: 30%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.message{
+    width: 70%;
+    height: 100%;
+}
+
+.lastMessage{
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.userName{
+    background-color: #EAEAEA;
+    gap: 0.4rem;
+    height: 60px;
+    border: 1px solid gray;
+}
+
+.userName img{
+    width: 50px;
+}
+
+.icon{
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.silenceNotification{
+    background-color: #8EDAFC;
+}
+
+.bell{
+    color: aliceblue;
+    font-size: 40px;
+}
+
+#new-message{
+    font-size: 12px;
+}
+
+#desktop-notification{
+    font-size: 10px;
+    text-decoration: underline;
+    color: gray;
+}
+
+.mycontact{
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+.mycontact:hover{
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+.mycontact.active{
+    background-color: grey;;
+}
+
+.mycontact img{
+    width: 15%;
+    height: 15%;
+}
+
+.mycontactName p{
+    font-size: 12px;
+}
+
+.message .chat{
+    background-image: url("../img/mine.jpg"); /* ../   [altriemnti non funziona] */
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.chat .delete {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .7em;
+    color: red;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+
+.received{
+    background-color: white;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.sent{
+    background-color: #D5F9BB;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.time{
+    color: gray;
+    font-size: 8px;
+    text-align: end;
+}
+
+.lateralSettings{
+    gap: 0.5rem;
+}
+
+.textMessage{
+    background-color: #F3EEEA;
+    height: 11.3%;
+}
